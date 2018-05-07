@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\mycodes\vs2015\a_star_complete\a_star_complete\genproblem.h(103): warning C4311: “类型转换”: 从“unsigned int *”到“unsigned int”的指针截断
+d:\mycodes\vs2015\a_star_complete\a_star_complete\genproblem.h(103): warning C4302: “类型转换”: 从“unsigned int *”到“unsigned int”截断
+  A_star_complete.vcxproj -> D:\MyCodes\VS2015\A_star_complete\x64\Debug\A_star_complete.exe
+  A_star_complete.vcxproj -> D:\MyCodes\VS2015\A_star_complete\x64\Debug\A_star_complete.pdb (Partial PDB)

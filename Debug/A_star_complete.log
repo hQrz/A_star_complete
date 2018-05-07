@@ -1,0 +1,7 @@
+﻿  main.cpp
+d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(22): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(23): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(35): warning C4018: “<”: 有符号/无符号不匹配
+d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(38): warning C4018: “<”: 有符号/无符号不匹配
+  A_star_complete.vcxproj -> D:\MyCodes\VS2015\A_star_complete\Debug\A_star_complete.exe
+  A_star_complete.vcxproj -> D:\MyCodes\VS2015\A_star_complete\Debug\A_star_complete.pdb (Partial PDB)
