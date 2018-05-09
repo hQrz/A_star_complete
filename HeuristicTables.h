@@ -32,7 +32,40 @@ public:
 			}
 		}
 	}
+	uchar* GetNormalizeMapping(uchar *m) {
+		uchar key = 0, val = 0;
+		uchar *mapping = new uchar[16];
+		for (short i = 0; i < 8; i++) {
+			key = m[i] >> 4;
+			mapping[key] = val;
+			val++;
+			key = m[i] & 0x0f;
+			mapping[key] = val;
+			val++;
+		}
+		return mapping;
+	}
+	void Normalize(uchar *m, uchar *mapping) {
+		uchar temp = 0, val = 0;
+		for (short i = 0; i < 8; i++) {
+			val = 0; temp = 0;
+			val = m[i] >> 4;
+			val = mapping[val];
+			val <<= 4;
+			temp = m[i] & 0x0f;
+			val = val | mapping[temp];
+			m[i] = val;
+		}
+	}
+	void BackwardNormalize(uchar *m, uchar* mapping) {
+		uchar *inverse = new uchar[16];
+		for (short i = 0; i < 16; i++) {
+			inverse[mapping[i]] = i;
+		}
+		Normalize(m, inverse);
+	}
 	static std::map<unsigned char, std::vector<int>> table;//<val,position> -> manhattan distance
+	//static std::map<>
 };
 std::map<unsigned char, std::vector<int>> RMTable::table;
 RMTable::RMTable(){

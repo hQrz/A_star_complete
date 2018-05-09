@@ -4,6 +4,7 @@
 #include<string>
 #include"RotatingMaze.h"
 
+#define MAZE_WIDTH 4
 #define uchar unsigned char
 #define SINGLE_TEST 0
 #define MAZES_FILE_NAME_TXT "mazes.txt"

@@ -22,6 +22,14 @@ FrontierRMaze* toFrontier(RotatingMaze* r, int length) {
 	}
 	return f;
 }
+template<typename T>
+AlphaMaze<T>* toAlphaMaze(RotatingMaze* r, int length) {
+	AlphaMaze<T> *f = new AlphaMaze<T>[length];
+	for (size_t i = 0; i < length; i++) {
+		f[i].initBy(&r[i]);
+	}
+	return f;
+}
 void PrintPath(queue<RotatingMaze> &path) {
 	cout << "path length:" << path.size() - 1 << endl;
 	while (!path.empty()) {
@@ -39,7 +47,9 @@ void GenSample() {
 	T r[100];
 	vector<pair<short, short>> seq;
 	//int disNum[10] = { 10,20,30,50,60,80,100,120,150,200 };
-	int disNum[10] = { 4,5,6,7,8,9,10,11,12,13 };
+	//int disNum[10] = { 4,5,6,7,8,9,10,11,12,13 };
+	//int disNum[10] = { 10,10,20,20,30,30,40,50,100,200 };
+	int disNum[10] = { 13,14,15,20,20,25,30,35,35,40 };
 	for (size_t i = 0; i < 10; i++) {
 		for (size_t k = 0; k < 10; k++) {
 			seq.clear();
@@ -121,7 +131,7 @@ void BFA_Experiment(){
 	function<queue<RotatingMaze>(RotatingMaze &start, RotatingMaze &goal, unsigned long long &total)> search_function = best_first_search<RotatingMaze>;
 	//Experiment(search_function);
 	RotatingMaze *r = ReadMazes<RotatingMaze>();
-	//thread exp0(Search<RotatingMaze>, 51, r, search_function);
+	//thread exp0(Search<RotatingMaze>, 0, r, search_function);
 	//exp0.join();
 	Experiment<RotatingMaze>(r, search_function);
 }
@@ -135,14 +145,23 @@ void FS_Experiment() {
 	Experiment<FrontierRMaze>(f, search_function);
 }
 
+void FSA_Experiment() {
+	function<queue<AlphaMaze<float>>(AlphaMaze<float> &start, AlphaMaze<float> &goal, unsigned long long &total)> search_function = frontier_search_with_alpha_pruning<AlphaMaze<float>>;
+	RotatingMaze *r = ReadMazes<RotatingMaze>();
+	AlphaMaze<float> *f = toAlphaMaze<float>(r, 100);
+	thread exp0(Search<AlphaMaze<float>>, 0, f, search_function);
+	exp0.join();
+	//Experiment<AlphaMaze<float>>(f, search_function);
+}
+
 int main() {
 	srand((unsigned)time(0));
-	RMTable t; 
-	t.GenTable();
-	//GenSample<RotatingMaze>();
+	RMTable t; t.GenTable();
+	GenSample<RotatingMaze>();
 	//IDA_Experiment();
 	//BFA_Experiment();
-	FS_Experiment();
+	//FS_Experiment();
+	FSA_Experiment();
 	//double_float_int_compare();
 	//cout << sizeof(bitset<64>) << endl;
 	getchar();

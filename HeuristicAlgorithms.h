@@ -13,7 +13,7 @@ using namespace std;
 template<typename T>
 class greater_class {
 public:
-	bool operator()(const T a, const T b) {
+	bool operator()(const T &a, const T &b) {
 		return (a.g_val + a.h_val) > (b.g_val + b.h_val);
 	}
 };
@@ -232,17 +232,40 @@ queue<T> frontier_search(T &start, T &goal, unsigned long long &total) {
 		pop_heap(open.begin(), open.end(), greater_class<T>());
 		x = new T(open.back());
 		if (x->h_val == 0) {
-			queue<T> p;
-			p.push(*x);
-			p.push(*(x->ffptr));
-			p.push(start);
-			std::cout << std::dec << "OPEN.SIZE()=" << open.size() << std::endl;
-			total = open.size() + relaynode.size();
+			queue<T> p, p_;
+			total = open.size() + relaynode.size() > total ? open.size() + relaynode.size() : total;
+			if (relaynode.size() == 1) {//起始与目标为父子关系
+				p.push(start);
+				return p;
+			}//std::cout << std::dec << "OPEN.SIZE()=" << open.size() << std::endl;
+			T s1, s2, s2_, s3;
+			memcpy(s1.maze, start.maze, sizeof(unsigned char) * 8);
+			memcpy(s2.maze, x->father->maze, sizeof(unsigned char) * 8);
+			memcpy(s2_.maze, x->father->maze, sizeof(unsigned char) * 8);
+			memcpy(s3.maze, goal.maze, sizeof(unsigned char) * 8);
+			RMTable rm;
+			uchar *m0 = rm.GetNormalizeMapping(s2.maze), *m1 = rm.GetNormalizeMapping(s3.maze);
+			rm.Normalize(s1.maze, m0); rm.Normalize(s2.maze, m0);
+			p = frontier_search(s1, s2, total);
+			for (size_t i = 0; i < p.size(); i++) {
+				T temp = p.front(); p.pop();
+				rm.BackwardNormalize(temp.maze, m0);
+				p.push(temp);
+			}
+			rm.Normalize(s2_.maze, m1); rm.Normalize(s3.maze, m1);
+			p_ = frontier_search(s2_, s3, total);
+			while (!p_.empty()) {
+				T temp = p_.front(); p_.pop();
+				rm.BackwardNormalize(temp.maze, m1);
+				p.push(temp);
+			}
 			return p;
 		}
 		if ((short)x->g_val == mid) {
-			x->SetRelayNode();
-			relaynode.push_back(*x);
+			if (find<T>(relaynode, *x) == -1) {
+				x->SetRelayNode();
+				relaynode.push_back(*x);
+			}
 		}
 		open.pop_back();
 		x->GenChildren(clist);
@@ -269,55 +292,90 @@ template<typename T>
 queue<T> sparse_memory_graph_search(T &start, T &goal, unsigned long long &total) {
 
 }
-
+template<typename T>
+class greater_class_alpha {
+public:
+	bool operator()(const T &a, const T &b) {
+		return (a.g_val + a.h_val > a.alpha ? a.g_val + a.h_val : a.alpha) > (b.g_val + b.h_val > b.alpha ? b.g_val + b.h_val : b.alpha);
+	}
+};
 template<typename T>
 queue<T> frontier_search_with_alpha_pruning(T &start, T &goal, unsigned long long &total) {
 	short temp = start.SumOfManhattanDistance(), mid;
+	float uu = 1000;
 	start.h_val = (float)(temp / 4.0);
 	start.SetRelayNode();
 	mid = (short)(start.h_val / 2);
-	vector<T> open, relaynode;
-	relaynode.push_back(start);
-	make_heap(open.begin(), open.end(), greater_class<T>());
+	mid = mid == 0 ? 1 : mid;
+	vector<T> open;
+	//relaynode.push_back(start);
+	make_heap(open.begin(), open.end(), greater_class_alpha<T>());
 	open.push_back(start);
-	push_heap(open.begin(), open.end(), greater_class<T>());
+	push_heap(open.begin(), open.end(), greater_class_alpha<T>());
 	queue<T> clist;
 	T *x = nullptr;
 	int index = 0;
 	while (!open.empty()) {
-		pop_heap(open.begin(), open.end(), greater_class<T>());
+		pop_heap(open.begin(), open.end(), greater_class_alpha<T>());
 		x = new T(open.back());
 		if (x->h_val == 0) {
-			queue<T> p;
-			p.push(*x);
-			p.push(*(x->ffptr));
-			p.push(start);
-			std::cout << std::dec << "OPEN.SIZE()=" << open.size() << std::endl;
-			total = open.size() + relaynode.size();
+			queue<T> p, p_;
+			total = open.size() > total ? open.size() : total;
+			if (x->g_val <= 1) {//起始与目标为父子关系
+				p.push(start);
+				return p;
+			}//std::cout << std::dec << "OPEN.SIZE()=" << open.size() << std::endl;
+			T s1, s2, s2_, s3;
+			memcpy(s1.maze, start.maze, sizeof(unsigned char) * 8);
+			memcpy(s2.maze, x->father->maze, sizeof(unsigned char) * 8);
+			memcpy(s2_.maze, x->father->maze, sizeof(unsigned char) * 8);
+			memcpy(s3.maze, goal.maze, sizeof(unsigned char) * 8);
+			RMTable rm;
+			uchar *m0 = rm.GetNormalizeMapping(s2.maze), *m1 = rm.GetNormalizeMapping(s3.maze);
+			rm.Normalize(s1.maze, m0); rm.Normalize(s2.maze, m0);
+			p = frontier_search_with_alpha_pruning(s1, s2, total);
+			for (size_t i = 0; i < p.size(); i++) {
+				T temp = p.front(); p.pop();
+				rm.BackwardNormalize(temp.maze, m0);
+				p.push(temp);
+			}
+			rm.Normalize(s2_.maze, m1); rm.Normalize(s3.maze, m1);
+			p_ = frontier_search_with_alpha_pruning(s2_, s3, total);
+			while (!p_.empty()) {
+				T temp = p_.front(); p_.pop();
+				rm.BackwardNormalize(temp.maze, m1);
+				p.push(temp);
+			}
 			return p;
 		}
 		if ((short)x->g_val == mid) {
 			x->SetRelayNode();
-			relaynode.push_back(*x);
 		}
 		open.pop_back();
-		x->GenChildren(clist);
+		if (open.size() > 0) {
+			float temp = open.front().g_val + open.front().h_val;
+			uu = temp > open.front().alpha ? temp : open.front().alpha;
+		}
+		x->GenChildren(clist, uu);
 		while (!clist.empty()) {
 			T item = clist.front(); clist.pop();
 			if ((index = find<T>(open, item)) != -1) {
 				if (open[index].g_val > item.g_val) {
 					open[index].g_val = item.g_val;
 					open[index].father = x;
-					make_heap(open.begin(), open.end(), greater_class<T>());
+					make_heap(open.begin(), open.end(), greater_class_alpha<T>());
 				}
 			} else {
 				open.push_back(item);
-				push_heap(open.begin(), open.end(), greater_class<T>());
+				push_heap(open.begin(), open.end(), greater_class_alpha<T>());
 			}
 		}
-		if (x->opr.test(18))
+		if (x->opr.none()) {
+			delete x;
 			continue;
-		delete x;
+		}
+		open.push_back(*x);
+		push_heap(open.begin(), open.end(), greater_class_alpha<T>());
 	}
 	return *new queue<T>();
 }

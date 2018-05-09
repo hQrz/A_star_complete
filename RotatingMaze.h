@@ -32,25 +32,22 @@ c &= 0xf0; b &= 0x0f;\
 c |= (temp2 >> 4);\
 b |= (temp1 << 4);
 
-class RotatingMaze{
+class BaseMaze {
 public:
-	RotatingMaze() {
-		this->father = nullptr;
-		this->g_val = 0;
-		this->h_val = 0;
+	BaseMaze() {
+#if MAZE_WIDTH == 4
 		maze[0] = 0x01;	maze[1] = 0x23;
 		maze[2] = 0x45;	maze[3] = 0x67;
 		maze[4] = 0x89;	maze[5] = 0xab;
 		maze[6] = 0xcd;	maze[7] = 0xef;
+#elif MAZE_WIDTH == 3
+
+#elif MAZE_WIDTH == 5
+
+#endif // MAZE_WIDTH == 4	
 	}
-	RotatingMaze(const RotatingMaze &rm) {
-		this->father = rm.father;
-		this->g_val = rm.g_val;
-		this->h_val = rm.h_val;
-		memcpy(this->maze, rm.maze, sizeof(unsigned char) * 8);
-	}
-	virtual ~RotatingMaze() = default;
-	void rotating(POSITION p,ROTA d) {
+	virtual ~BaseMaze() = default;
+	void rotating(POSITION p, ROTA d) {
 		switch (p) {
 		case POSITION::lu:turn(d, maze[0], maze[2]); break;
 		case POSITION::u:turn(d, maze[0], maze[1], maze[2], maze[3]); break;
@@ -64,7 +61,7 @@ public:
 		default:break;
 		}
 	}
-	void clockwise(uchar &a,uchar &b) {// 01 xx  _\  40 xx
+	void clockwise(uchar &a, uchar &b) {// 01 xx  _\  40 xx
 		uchar temp = a;                // 45 xx  -/  51 xx
 		a >>= 4; a |= (b & 0xf0);
 		b <<= 4; b |= (temp & 0x0f);
@@ -80,22 +77,22 @@ public:
 	void counterclockwise(uchar &a, uchar &b, uchar &c, uchar &d) {//a<- 01 23 ->b    _ \  02 63
 		CORSS_TURN(c, d, a, b);                                    //c<- 45 67 ->d    - /  41 57
 	}
-	void turn(ROTA &dg,uchar &a,uchar &b) {
+	void turn(ROTA &dg, uchar &a, uchar &b) {
 		switch (dg) {
 		case CLOCK:clockwise(a, b); break;
 		case CCLOCK:counterclockwise(a, b); break;
 		default:break;
 		}
 	}
-	void turn(ROTA &dg,uchar &a, uchar &b, uchar &c, uchar &d) {
+	void turn(ROTA &dg, uchar &a, uchar &b, uchar &c, uchar &d) {
 		switch (dg) {
-		case CLOCK:clockwise(a, b, c ,d); break;
-		case CCLOCK:counterclockwise(a, b, c,d); break;
+		case CLOCK:clockwise(a, b, c, d); break;
+		case CCLOCK:counterclockwise(a, b, c, d); break;
 		default:break;
 		}
 	}
 	void left_up(ROTA d) {
-		turn(d,maze[0],maze[2]);
+		turn(d, maze[0], maze[2]);
 	}
 	void up(ROTA d) {
 		turn(d, maze[0], maze[1], maze[2], maze[3]);
@@ -110,7 +107,7 @@ public:
 		turn(d, maze[2], maze[3], maze[4], maze[5]);
 	}
 	void right(ROTA d) {
-		turn(d,maze[3],maze[5]);
+		turn(d, maze[3], maze[5]);
 	}
 	void left_down(ROTA d) {
 		turn(d, maze[4], maze[6]);
@@ -121,20 +118,11 @@ public:
 	void right_down(ROTA d) {
 		turn(d, maze[5], maze[7]);
 	}
-	std::ostringstream PrintMaze() {
-		std::ostringstream sout;
-		sout << "g=" << this->g_val << " h=" << this->h_val <<" f=g+h=" << this->g_val+this->h_val << std::endl;
-		for (int i = 0; i < 8; i+=2) {
-			sout << std::hex << (short)(maze[i] >> 4) << " " << std::hex << (short)(maze[i] & 0x0f) << " " << std::hex << (short)(maze[i + 1] >> 4) << " " << std::hex << (short)(maze[i + 1] & 0x0f) << std::endl;
-		}
-		sout << std::endl;
-		return sout;
-	}
-	int DislocationNumber(RotatingMaze &goal) {
+	int DislocationNumber(uchar *m) {
 		int count = 0;
 		uchar temp = 0;
 		for (int i = 0; i < 8; i++) {
-			temp = maze[i] ^ goal.maze[i];
+			temp = maze[i] ^ m[i];
 			if (temp > 0) {
 				if ((temp & 0xf0) > 0) {
 					count += 2;
@@ -152,9 +140,6 @@ public:
 			count += t.table[maze[i]][i];
 		}
 		return count;
-	}
-	int SumOfManhattanDistance(uchar *maze) {
-		//int count;
 	}
 	int MaxManhattanDistance() {
 		int max = 0;
@@ -185,7 +170,35 @@ public:
 		}
 		return opr;
 	}
-	virtual void GenChildren(std::queue<RotatingMaze> &q) {
+	uchar maze[8];
+};
+
+class RotatingMaze :public BaseMaze {
+public:
+	RotatingMaze() {
+		this->father = nullptr;
+		this->g_val = 0;
+		this->h_val = 0;
+	}
+	RotatingMaze(const RotatingMaze &rm) {
+		this->father = rm.father;
+		this->g_val = rm.g_val;
+		this->h_val = rm.h_val;
+		memcpy(this->maze, rm.maze, sizeof(unsigned char) * 8);
+	}
+	virtual ~RotatingMaze() = default;
+
+	std::ostringstream PrintMaze() {
+		std::ostringstream sout;
+		sout << "g=" << this->g_val << " h=" << this->h_val << " f=g+h=" << this->g_val + this->h_val << std::endl;
+		for (int i = 0; i < 8; i += 2) {
+			sout << std::hex << (short)(maze[i] >> 4) << " " << std::hex << (short)(maze[i] & 0x0f) << " " << std::hex << (short)(maze[i + 1] >> 4) << " " << std::hex << (short)(maze[i + 1] & 0x0f) << std::endl;
+		}
+		sout << std::endl;
+		return sout;
+	}
+
+	void GenChildren(std::queue<RotatingMaze> &q) {
 		for (int i = 0; i < 9; i++) {
 			for (int j = 0; j < 2; j++) {
 				RotatingMaze rm;
@@ -193,12 +206,7 @@ public:
 				rm.g_val = this->g_val + 1;
 				memcpy(rm.maze, this->maze, sizeof(unsigned char) * 8);
 				rm.rotating((POSITION)i, (ROTA)j);
-				int count = 0;
-				RMTable t;
-				for (int k = 0; k < 8; k++) {
-					count += t.table[maze[k]][k];
-				}
-				rm.h_val = (float)(count / 4.0);
+				rm.h_val = (float)(rm.SumOfManhattanDistance() / 4.0);
 				q.push(rm);
 			}
 		}
@@ -211,12 +219,7 @@ public:
 				rm.g_val = this->g_val + 1;
 				memcpy(rm.maze, this->maze, sizeof(unsigned char) * 8);
 				rm.rotating((POSITION)i, (ROTA)j);
-				int count = 0;
-				RMTable t;
-				for (int k = 0; k < 8; k++) {
-					count += t.table[maze[k]][k];
-				}
-				rm.h_val = (float)(count / 4.0);
+				rm.h_val = (float)(rm.SumOfManhattanDistance() / 4.0);
 				q.push_back(rm);
 			}
 		}
@@ -224,17 +227,18 @@ public:
 	virtual void SetRelayNode() {
 	}
 //property:
-	uchar maze[8];
 	RotatingMaze *father;
 	float g_val;
 	float h_val;
 };
 
-class FrontierRMaze :public RotatingMaze {
+class FrontierRMaze :public BaseMaze {
 public:
 	FrontierRMaze() {
-		ffptr = nullptr;
+		father = nullptr;
 		opr = 0x03ffff;
+		this->g_val = 0;
+		this->h_val = 0;
 	}
 	~FrontierRMaze() {}
 	virtual void resetBit(int index) {
@@ -243,9 +247,18 @@ public:
 	bool isFrontier() {
 		return opr.none();
 	}
-	void ffptrBackward() {
-		while (this->ffptr->opr.test(18) == false) {
-			this->ffptr = this->ffptr->ffptr;
+	std::ostringstream PrintMaze() {
+		std::ostringstream sout;
+		sout << "g=" << this->g_val << " h=" << this->h_val << " f=g+h=" << this->g_val + this->h_val << std::endl;
+		for (int i = 0; i < 8; i += 2) {
+			sout << std::hex << (short)(maze[i] >> 4) << " " << std::hex << (short)(maze[i] & 0x0f) << " " << std::hex << (short)(maze[i + 1] >> 4) << " " << std::hex << (short)(maze[i + 1] & 0x0f) << std::endl;
+		}
+		sout << std::endl;
+		return sout;
+	}
+	void Ancestor() {
+		while (this->father->opr.test(18) == false) {
+			this->father = this->father->father;
 		}
 	}
 	void initBy(RotatingMaze *r) {
@@ -258,19 +271,14 @@ public:
 			for (int j = 0; j < 2; j++) {
 				if (opr.test(i * 2 + j)) {
 					FrontierRMaze rm;
-					rm.ffptr = this;
-					rm.ffptrBackward();
+					rm.father = this;
+					rm.Ancestor();
 					rm.g_val = this->g_val + 1;
 					memcpy(rm.maze, this->maze, sizeof(unsigned char) * 8);
 					this->opr.reset(i * 2 + j);
 					rm.rotating((POSITION)i, (ROTA)j);
 					rm.opr.reset(i * 2 + (j + 1) % 2);
-					int count = 0;
-					RMTable t;
-					for (int k = 0; k < 8; k++) {
-						count += t.table[maze[k]][k];
-					}
-					rm.h_val = (float)(count / 4.0);
+					rm.h_val = (float)(rm.SumOfManhattanDistance() / 4.0);
 					q.push(rm);
 				}
 			}
@@ -284,7 +292,9 @@ public:
 	}
 //property:
 	std::bitset<24> opr;
-	FrontierRMaze *ffptr;
+	FrontierRMaze *father;
+	float g_val;
+	float h_val;
 	//0000 0000 0000 0000 0000 0000
 	//____ _R r  d l  r c  l r  u l
 	//____ _e d    d         u    u
@@ -299,5 +309,80 @@ public:
 private:
 
 };
+template<typename T>
+class AlphaMaze :public BaseMaze {
+public:
+	AlphaMaze() {
+		this->father = nullptr;
+		this->opr = 0x03ffff;
+		this->g_val = 0;
+		this->h_val = 0;
+		this->alpha = -1;
+	}
+	~AlphaMaze() {}
+	std::ostringstream PrintMaze() {
+		std::ostringstream sout;
+		sout << "g=" << this->g_val << " h=" << this->h_val << " f=g+h=" << this->g_val + this->h_val << " alpha:" << this->alpha << std::endl;
+		for (int i = 0; i < 8; i += 2) {
+			sout << std::hex << (short)(maze[i] >> 4) << " " << std::hex << (short)(maze[i] & 0x0f) << " " << std::hex << (short)(maze[i + 1] >> 4) << " " << std::hex << (short)(maze[i + 1] & 0x0f) << std::endl;
+		}
+		sout << std::endl;
+		return sout;
+	}
+	void Ancestor() {
+		while (this->father->opr.test(18) == false) {
+			this->father = this->father->father;
+		}
+	}
+	void initBy(RotatingMaze *r) {
+		memcpy(this->maze, r->maze, sizeof(unsigned char) * 8);
+		this->g_val = r->g_val;
+		this->h_val = r->h_val;
+	}
+	void GenChildren(std::queue<AlphaMaze<T>> &q, T u) {
+		bool flag = true;
+		this->alpha = -1;
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 2; j++) {
+				if (opr.test(i * 2 + j)) {
+					flag = false;
+					AlphaMaze *rm = new AlphaMaze;
+					rm->g_val = this->g_val + 1;
+					memcpy(rm->maze, this->maze, sizeof(unsigned char) * 8);
+					rm->rotating((POSITION)i, (ROTA)j);
+					rm->h_val = (float)(rm->SumOfManhattanDistance() / 4.0);
+					if (rm->g_val + rm->h_val > u) {
+						if (rm->g_val + rm->h_val < alpha || alpha == -1) {
+							alpha = rm->g_val + rm->h_val;
+						}
+						delete rm;
+						continue;
+					}
+					rm->father = this;
+					rm->Ancestor();
+					this->opr.reset(i * 2 + j);
+					rm->opr.reset(i * 2 + (j + 1) % 2);
+					q.push(*rm);
+				}
+			}
+		}
+		if (opr.test(18) && flag) {
+			this->alpha = 1000;
+		}
+	}
+	bool isRelayNode() {
+		return opr.test(18);
+	}
+	void SetRelayNode() {
+		opr.set(18);
+	}
+//property:
+	std::bitset<24> opr;
+	AlphaMaze *father;
+	T alpha;
+	T g_val;
+	T h_val;
+};
+
 
 #endif // !ROTATINGMAZE_H
