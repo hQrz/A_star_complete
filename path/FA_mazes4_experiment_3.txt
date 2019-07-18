@@ -1,0 +1,540 @@
+init 3:
+g=0 h=0 f=g+h=0
+0 2 7 5
+1 3 4 d
+6 a e b
+9 8 c f
+
+time:0.116 s  length:2  search nodes:189002
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=6 f=g+h=9
+2 3 4 7
+0 1 d 5
+9 6 e b
+8 a c f
+
+g=0 h=7 f=g+h=7
+0 2 7 5
+1 3 4 d
+6 a e b
+9 8 c f
+
+
+init 8:
+g=0 h=0 f=g+h=0
+9 e 5 1
+0 4 3 6
+8 f d 2
+c 7 a b
+
+time:0.017 s  length:2  search nodes:33338
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=4 h=5 f=g+h=9
+9 e 1 3
+0 4 5 7
+8 a 2 6
+c d f b
+
+g=0 h=8 f=g+h=8
+9 e 5 1
+0 4 3 6
+8 f d 2
+c 7 a b
+
+
+init 13:
+g=0 h=0 f=g+h=0
+1 a 8 3
+0 2 4 7
+9 6 e d
+5 f c b
+
+time:0.125 s  length:2  search nodes:226746
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=6 f=g+h=9
+1 4 2 3
+0 8 a 7
+9 e c d
+5 6 f b
+
+g=0 h=7 f=g+h=7
+1 a 8 3
+0 2 4 7
+9 6 e d
+5 f c b
+
+
+init 18:
+g=0 h=0 f=g+h=0
+5 9 7 6
+8 2 d a
+3 0 b 1
+4 c e f
+
+time:0.01 s  length:2  search nodes:15641
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=4 h=5 f=g+h=9
+5 9 0 7
+2 3 1 6
+8 d a b
+4 c e f
+
+g=0 h=8 f=g+h=8
+5 9 7 6
+8 2 d a
+3 0 b 1
+4 c e f
+
+
+init 23:
+g=0 h=0 f=g+h=0
+6 9 3 7
+0 1 e 2
+4 8 a b
+c d 5 f
+
+time:0.118 s  length:2  search nodes:227295
+g=9 h=0 f=g+h=9
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=2 h=3 f=g+h=5
+0 6 3 7
+4 1 e 2
+8 9 a b
+c d 5 f
+
+g=0 h=5 f=g+h=5
+6 9 3 7
+0 1 e 2
+4 8 a b
+c d 5 f
+
+
+init 28:
+g=0 h=0 f=g+h=0
+0 6 2 3
+4 a 5 b
+1 7 9 d
+8 c e f
+
+time:0.008 s  length:2  search nodes:11245
+g=7 h=0 f=g+h=7
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=2 h=4 f=g+h=6
+0 6 2 3
+4 7 a 5
+1 d 9 b
+8 c e f
+
+g=0 h=5 f=g+h=5
+0 6 2 3
+4 a 5 b
+1 7 9 d
+8 c e f
+
+
+init 33:
+g=0 h=0 f=g+h=0
+5 6 d 2
+0 b 3 1
+9 4 7 a
+8 c e f
+
+time:0.01 s  length:2  search nodes:16359
+g=9 h=0 f=g+h=9
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=5 f=g+h=8
+5 6 2 1
+0 d 4 7
+9 b a 3
+8 c e f
+
+g=0 h=7 f=g+h=7
+5 6 d 2
+0 b 3 1
+9 4 7 a
+8 c e f
+
+
+init 38:
+g=0 h=0 f=g+h=0
+0 1 6 2
+9 4 5 3
+b d a f
+8 7 c e
+
+time:0.109 s  length:2  search nodes:211545
+g=9 h=0 f=g+h=9
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=2 h=4 f=g+h=6
+0 1 6 2
+4 5 a 3
+9 d b f
+8 7 c e
+
+g=0 h=5 f=g+h=5
+0 1 6 2
+9 4 5 3
+b d a f
+8 7 c e
+
+
+init 43:
+g=0 h=0 f=g+h=0
+0 1 e 3
+c b a 7
+5 4 6 f
+d 9 2 8
+
+time:0.115 s  length:2  search nodes:225238
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=6 f=g+h=9
+0 1 3 7
+c 4 a f
+5 6 b e
+d 9 2 8
+
+g=0 h=6 f=g+h=6
+0 1 e 3
+c b a 7
+5 4 6 f
+d 9 2 8
+
+
+init 48:
+g=0 h=0 f=g+h=0
+4 5 a 3
+c 1 e b
+7 0 2 6
+d 9 8 f
+
+time:0.163 s  length:2  search nodes:335893
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=5 f=g+h=8
+4 5 a 3
+1 7 0 b
+c 9 2 6
+d 8 e f
+
+g=0 h=7 f=g+h=7
+4 5 a 3
+c 1 e b
+7 0 2 6
+d 9 8 f
+
+
+init 53:
+g=0 h=0 f=g+h=0
+0 e 9 3
+4 5 a 6
+2 b 1 7
+c d 8 f
+
+time:0.235 s  length:2  search nodes:486112
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=6 f=g+h=9
+0 e 9 3
+5 2 1 6
+a 4 b 7
+c d 8 f
+
+g=0 h=6 f=g+h=6
+0 e 9 3
+4 5 a 6
+2 b 1 7
+c d 8 f
+
+
+init 58:
+g=0 h=0 f=g+h=0
+8 0 6 2
+7 4 a 5
+1 c e 3
+d 9 f b
+
+time:0.258 s  length:2  search nodes:508534
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=5 f=g+h=8
+8 0 6 2
+1 4 5 3
+c e 7 a
+d 9 f b
+
+g=0 h=6 f=g+h=6
+8 0 6 2
+7 4 a 5
+1 c e 3
+d 9 f b
+
+
+init 63:
+g=0 h=0 f=g+h=0
+1 5 7 3
+d 4 0 6
+a 8 c b
+9 e 2 f
+
+time:3.963 s  length:2  search nodes:8045974
+g=11 h=0 f=g+h=11
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=5 f=g+h=8
+4 0 5 3
+1 d 7 6
+a c 2 b
+9 8 e f
+
+g=0 h=6 f=g+h=6
+1 5 7 3
+d 4 0 6
+a 8 c b
+9 e 2 f
+
+
+init 68:
+g=0 h=0 f=g+h=0
+1 f 2 3
+4 9 0 7
+8 6 e a
+c 5 d b
+
+time:0.128 s  length:2  search nodes:246411
+g=9 h=0 f=g+h=9
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=2 h=4 f=g+h=6
+1 2 0 3
+4 9 e 7
+8 f 6 a
+c 5 d b
+
+g=0 h=5 f=g+h=5
+1 f 2 3
+4 9 0 7
+8 6 e a
+c 5 d b
+
+
+init 73:
+g=0 h=0 f=g+h=0
+8 4 0 2
+6 e 7 3
+a 1 b f
+c 9 5 d
+
+time:0.008 s  length:2  search nodes:14627
+g=9 h=0 f=g+h=9
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=5 f=g+h=8
+8 0 e 2
+6 4 1 3
+a 5 7 b
+c 9 d f
+
+g=0 h=7 f=g+h=7
+8 4 0 2
+6 e 7 3
+a 1 b f
+c 9 5 d
+
+
+init 78:
+g=0 h=0 f=g+h=0
+1 4 6 2
+9 5 7 0
+8 a e 3
+c d f b
+
+time:0.201 s  length:2  search nodes:435392
+g=9 h=0 f=g+h=9
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=2 h=5 f=g+h=7
+4 5 6 2
+1 7 e 0
+8 9 a 3
+c d f b
+
+g=0 h=5 f=g+h=5
+1 4 6 2
+9 5 7 0
+8 a e 3
+c d f b
+
+
+init 83:
+g=0 h=0 f=g+h=0
+1 9 3 7
+5 d 0 6
+8 2 a f
+4 b c e
+
+time:0.136 s  length:2  search nodes:261873
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=4 f=g+h=7
+1 9 0 3
+5 6 2 7
+8 d b f
+4 c a e
+
+g=0 h=6 f=g+h=6
+1 9 3 7
+5 d 0 6
+8 2 a f
+4 b c e
+
+
+init 88:
+g=0 h=0 f=g+h=0
+0 1 2 3
+5 4 6 e
+c a d b
+9 8 7 f
+
+time:0.08 s  length:2  search nodes:157547
+g=8 h=0 f=g+h=8
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=2 h=5 f=g+h=7
+0 1 2 3
+5 6 7 e
+c 4 a d
+9 8 f b
+
+g=0 h=4 f=g+h=4
+0 1 2 3
+5 4 6 e
+c a d b
+9 8 7 f
+
+
+init 93:
+g=0 h=0 f=g+h=0
+1 a 6 2
+8 4 e 3
+5 d b 0
+9 c f 7
+
+time:0.116 s  length:2  search nodes:244091
+g=10 h=0 f=g+h=10
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=5 f=g+h=8
+1 a 0 3
+8 4 2 6
+5 d e b
+9 c f 7
+
+g=0 h=7 f=g+h=7
+1 a 6 2
+8 4 e 3
+5 d b 0
+9 c f 7
+
+
+init 98:
+g=0 h=0 f=g+h=0
+0 2 6 7
+5 d 9 1
+8 f 4 3
+b a c e
+
+time:7.526 s  length:2  search nodes:15800079
+g=12 h=0 f=g+h=12
+0 1 2 3
+4 5 6 7
+8 9 a b
+c d e f
+
+g=3 h=6 f=g+h=9
+0 2 9 6
+5 1 7 3
+8 d 4 f
+b a c e
+
+g=0 h=7 f=g+h=7
+0 2 6 7
+5 d 9 1
+8 f 4 3
+b a c e
+
+

@@ -1,0 +1,900 @@
+init 0:
+g=0 h=6 f=g+h=6
+2 4 9 6
+0 1 3 b
+d 5 7 a
+8 c e f
+
+time:0.011 s  length:8  search nodes:26140
+
+init 1:
+g=0 h=7 f=g+h=7
+8 3 b a
+4 0 1 2
+c 6 5 7
+d f e 9
+
+time:0.045 s  length:10  search nodes:114442
+
+init 2:
+g=0 h=4 f=g+h=4
+2 5 0 3
+4 1 6 7
+8 9 f e
+c d b a
+
+time:0.003 s  length:6  search nodes:3484
+
+init 3:
+g=0 h=7 f=g+h=7
+0 2 7 5
+1 3 4 d
+6 a e b
+9 8 c f
+
+time:0.054 s  length:10  search nodes:122073
+
+init 4:
+g=0 h=7 f=g+h=7
+5 1 3 6
+9 e 0 2
+c 4 f 7
+8 a d b
+
+time:0.003 s  length:8  search nodes:6351
+
+init 5:
+g=0 h=6 f=g+h=6
+4 0 2 3
+5 e 7 6
+d c a 8
+9 1 f b
+
+time:0.005 s  length:8  search nodes:8587
+
+init 6:
+g=0 h=6 f=g+h=6
+0 2 a 3
+4 7 6 f
+d 8 1 5
+9 e b c
+
+time:0.103 s  length:10  search nodes:269930
+
+init 7:
+g=0 h=5 f=g+h=5
+4 8 3 7
+1 6 2 5
+0 9 b f
+c e d a
+
+time:0.011 s  length:8  search nodes:29367
+
+init 8:
+g=0 h=8 f=g+h=8
+9 e 5 1
+0 4 3 6
+8 f d 2
+c 7 a b
+
+time:0.031 s  length:10  search nodes:64725
+
+init 9:
+g=0 h=5 f=g+h=5
+5 7 9 2
+0 4 6 1
+8 a 3 b
+c d e f
+
+time:0.049 s  length:8  search nodes:101659
+
+init 10:
+g=0 h=4 f=g+h=4
+4 a 5 3
+1 2 0 7
+c 9 6 b
+8 d e f
+
+time:0.058 s  length:8  search nodes:134214
+
+init 11:
+g=0 h=6 f=g+h=6
+4 6 1 7
+5 d 0 2
+9 c b a
+8 e 3 f
+
+time:0.422 s  length:10  search nodes:1069778
+
+init 12:
+g=0 h=5 f=g+h=5
+0 3 b 5
+4 e 2 7
+8 1 a 9
+c 6 d f
+
+time:0.424 s  length:10  search nodes:1061385
+
+init 13:
+g=0 h=7 f=g+h=7
+1 a 8 3
+0 2 4 7
+9 6 e d
+5 f c b
+
+time:0.118 s  length:10  search nodes:244183
+
+init 14:
+g=0 h=6 f=g+h=6
+0 1 6 2
+5 d c 3
+4 7 f a
+8 e 9 b
+
+time:0.014 s  length:8  search nodes:24319
+
+init 15:
+g=0 h=7 f=g+h=7
+9 a 0 3
+8 b 2 6
+d 1 4 5
+c e f 7
+
+time:0.002 s  length:8  search nodes:2832
+
+init 16:
+g=0 h=7 f=g+h=7
+1 4 7 6
+0 8 f e
+9 5 2 b
+c d 3 a
+
+time:0.004 s  length:8  search nodes:5824
+
+init 17:
+g=0 h=6 f=g+h=6
+1 9 5 3
+0 c 2 b
+4 d 6 a
+e 8 7 f
+
+time:0.752 s  length:10  search nodes:1903768
+
+init 18:
+g=0 h=8 f=g+h=8
+5 9 7 6
+8 2 d a
+3 0 b 1
+4 c e f
+
+time:0.021 s  length:10  search nodes:52349
+
+init 19:
+g=0 h=7 f=g+h=7
+1 5 3 7
+9 d 8 b
+0 c 2 e
+4 a f 6
+
+time:0.101 s  length:10  search nodes:215019
+
+init 20:
+g=0 h=5 f=g+h=5
+1 5 6 2
+0 7 e 3
+4 d 9 a
+8 c f b
+
+time:0 s  length:5  search nodes:282
+
+init 21:
+g=0 h=7 f=g+h=7
+4 6 a 7
+1 0 2 b
+c 8 e 9
+d 3 5 f
+
+time:0.016 s  length:9  search nodes:29913
+
+init 22:
+g=0 h=7 f=g+h=7
+8 9 6 3
+2 0 5 a
+c 1 7 f
+d 4 b e
+
+time:0.006 s  length:9  search nodes:17186
+
+init 23:
+g=0 h=5 f=g+h=5
+6 9 3 7
+0 1 e 2
+4 8 a b
+c d 5 f
+
+time:0.194 s  length:9  search nodes:483349
+
+init 24:
+g=0 h=5 f=g+h=5
+1 5 2 3
+c 4 6 7
+8 9 0 e
+d b f a
+
+time:0.006 s  length:7  search nodes:12602
+
+init 25:
+g=0 h=7 f=g+h=7
+4 9 3 7
+c 0 5 a
+d 6 2 1
+e 8 f b
+
+time:1.745 s  length:11  search nodes:3834724
+
+init 26:
+g=0 h=7 f=g+h=7
+0 8 1 7
+a 2 3 6
+5 d f e
+c 4 9 b
+
+time:0.001 s  length:7  search nodes:460
+
+init 27:
+g=0 h=6 f=g+h=6
+0 8 5 1
+b 2 3 6
+9 4 e a
+c d f 7
+
+time:0.092 s  length:9  search nodes:243924
+
+init 28:
+g=0 h=5 f=g+h=5
+0 6 2 3
+4 a 5 b
+1 7 9 d
+8 c e f
+
+time:0.006 s  length:7  search nodes:13813
+
+init 29:
+g=0 h=6 f=g+h=6
+0 1 3 6
+8 4 2 a
+9 c 5 e
+d 7 f b
+
+time:0.11 s  length:9  search nodes:267217
+
+init 30:
+g=0 h=4 f=g+h=4
+0 1 2 3
+8 4 7 f
+c 9 6 b
+e d 5 a
+
+time:0 s  length:5  search nodes:388
+
+init 31:
+g=0 h=5 f=g+h=5
+0 1 6 2
+7 9 3 b
+5 8 4 f
+c d a e
+
+time:0.396 s  length:9  search nodes:1043587
+
+init 32:
+g=0 h=8 f=g+h=8
+5 2 7 4
+9 1 b 3
+a e 6 d
+8 c 0 f
+
+time:0.398 s  length:11  search nodes:1004254
+
+init 33:
+g=0 h=7 f=g+h=7
+5 6 d 2
+0 b 3 1
+9 4 7 a
+8 c e f
+
+time:0.014 s  length:9  search nodes:31445
+
+init 34:
+g=0 h=6 f=g+h=6
+0 2 3 5
+4 b 7 9
+1 c d 6
+8 e a f
+
+time:0.03 s  length:9  search nodes:67492
+
+init 35:
+g=0 h=6 f=g+h=6
+5 2 9 3
+1 4 6 b
+7 d 0 a
+8 c e f
+
+time:0.001 s  length:7  search nodes:1051
+
+init 36:
+g=0 h=4 f=g+h=4
+4 3 1 2
+5 0 6 e
+8 a 9 b
+c d f 7
+
+time:0.395 s  length:9  search nodes:980752
+
+init 37:
+g=0 h=6 f=g+h=6
+0 4 1 2
+8 b 7 3
+c 9 f 5
+6 e a d
+
+time:0.008 s  length:9  search nodes:16891
+
+init 38:
+g=0 h=5 f=g+h=5
+0 1 6 2
+9 4 5 3
+b d a f
+8 7 c e
+
+time:0.056 s  length:9  search nodes:130457
+
+init 39:
+g=0 h=6 f=g+h=6
+0 8 5 3
+9 4 1 6
+c d b 7
+e 2 a f
+
+time:0.063 s  length:9  search nodes:123563
+
+init 40:
+g=0 h=6 f=g+h=6
+4 7 6 2
+5 0 3 1
+8 d 9 e
+c b f a
+
+time:0.008 s  length:8  search nodes:23756
+
+init 41:
+g=0 h=7 f=g+h=7
+2 d 3 7
+0 4 1 5
+c 9 6 e
+f a 8 b
+
+time:0.341 s  length:10  search nodes:888287
+
+init 42:
+g=0 h=5 f=g+h=5
+d c 3 1
+0 5 2 7
+4 b a 6
+8 9 e f
+
+time:0.385 s  length:10  search nodes:1022975
+
+init 43:
+g=0 h=6 f=g+h=6
+0 1 e 3
+c b a 7
+5 4 6 f
+d 9 2 8
+
+time:0.102 s  length:10  search nodes:270923
+
+init 44:
+g=0 h=6 f=g+h=6
+4 2 6 3
+9 0 7 b
+5 1 c d
+8 a e f
+
+time:0.844 s  length:10  search nodes:2182437
+
+init 45:
+g=0 h=5 f=g+h=5
+5 4 1 3
+2 6 0 7
+d 9 e a
+8 c b f
+
+time:1.643 s  length:10  search nodes:4243885
+
+init 46:
+g=0 h=5 f=g+h=5
+2 5 6 3
+0 8 9 7
+4 1 e d
+c f a b
+
+time:0.012 s  length:8  search nodes:32329
+
+init 47:
+g=0 h=9 f=g+h=9
+c 5 4 6
+2 f 7 3
+1 b 0 e
+d 8 9 a
+
+time:0.381 s  length:12  search nodes:1005669
+
+init 48:
+g=0 h=7 f=g+h=7
+4 5 a 3
+c 1 e b
+7 0 2 6
+d 9 8 f
+
+time:0.091 s  length:10  search nodes:221961
+
+init 49:
+g=0 h=8 f=g+h=8
+4 0 6 3
+2 9 a 1
+d e c f
+8 b 7 5
+
+time:0.047 s  length:10  search nodes:120063
+
+init 50:
+g=0 h=4 f=g+h=4
+4 0 1 3
+8 a 6 7
+9 5 f e
+c d 2 b
+
+time:3.171 s  length:10  search nodes:8441793
+
+init 51:
+g=0 h=6 f=g+h=6
+4 2 6 3
+0 f d 7
+8 1 5 9
+e a c b
+
+time:0.442 s  length:10  search nodes:1082942
+
+init 52:
+g=0 h=6 f=g+h=6
+8 2 d 3
+5 4 1 7
+0 b 6 f
+c e 9 a
+
+time:0.007 s  length:8  search nodes:15568
+
+init 53:
+g=0 h=6 f=g+h=6
+0 e 9 3
+4 5 a 6
+2 b 1 7
+c d 8 f
+
+time:0.714 s  length:10  search nodes:1791802
+
+init 54:
+g=0 h=5 f=g+h=5
+1 0 2 3
+9 a b 6
+c 4 7 5
+d 8 e f
+
+time:0.043 s  length:8  search nodes:109850
+
+init 55:
+g=0 h=5 f=g+h=5
+4 0 6 2
+8 5 1 b
+3 7 a e
+c 9 d f
+
+time:0.019 s  length:8  search nodes:48297
+
+init 56:
+g=0 h=6 f=g+h=6
+4 0 3 7
+9 1 5 8
+d 6 e b
+c 2 a f
+
+time:0.761 s  length:10  search nodes:1929569
+
+init 57:
+g=0 h=6 f=g+h=6
+4 9 1 3
+6 0 5 7
+2 b d f
+8 e c a
+
+time:0.181 s  length:10  search nodes:478043
+
+init 58:
+g=0 h=6 f=g+h=6
+8 0 6 2
+7 4 a 5
+1 c e 3
+d 9 f b
+
+time:0.401 s  length:10  search nodes:1033813
+
+init 59:
+g=0 h=5 f=g+h=5
+4 0 2 3
+1 6 a 5
+d c e b
+8 9 f 7
+
+time:0.076 s  length:8  search nodes:213210
+
+init 60:
+g=0 h=6 f=g+h=6
+1 a 2 3
+0 6 e 8
+9 d 7 b
+c 4 5 f
+
+time:0.016 s  length:9  search nodes:34577
+
+init 61:
+g=0 h=9 f=g+h=9
+9 5 f a
+c 0 6 2
+1 7 3 e
+d 8 4 b
+
+time:3.512 s  length:13  search nodes:8747309
+
+init 62:
+g=0 h=5 f=g+h=5
+1 5 3 b
+4 d 2 7
+0 c 9 f
+8 6 a e
+
+time:0.003 s  length:7  search nodes:2124
+
+init 63:
+g=0 h=6 f=g+h=6
+1 5 7 3
+d 4 0 6
+a 8 c b
+9 e 2 f
+
+time:5.947 s  length:11  search nodes:15192474
+
+init 64:
+g=0 h=7 f=g+h=7
+0 9 5 7
+b 4 3 a
+1 6 e 2
+8 d c f
+
+time:1.76 s  length:11  search nodes:4395551
+
+init 65:
+g=0 h=4 f=g+h=4
+1 2 7 3
+4 5 6 d
+8 9 b f
+c 0 a e
+
+time:24.085 s  length:11  search nodes:63705911
+
+init 66:
+g=0 h=5 f=g+h=5
+0 2 6 3
+8 1 4 b
+5 e 7 d
+c 9 f a
+
+time:0.001 s  length:7  search nodes:2200
+
+init 67:
+g=0 h=7 f=g+h=7
+5 1 e 3
+0 4 a 6
+f 7 2 9
+8 c b d
+
+time:121.083 s  length:13  search nodes:269957329
+
+init 68:
+g=0 h=5 f=g+h=5
+1 f 2 3
+4 9 0 7
+8 6 e a
+c 5 d b
+
+time:0.205 s  length:9  search nodes:501017
+
+init 69:
+g=0 h=6 f=g+h=6
+0 9 3 7
+4 c a 1
+8 d 6 2
+5 e b f
+
+time:0.053 s  length:9  search nodes:136659
+
+init 70:
+g=0 h=6 f=g+h=6
+1 2 7 6
+0 b 5 3
+c 4 e a
+d 8 9 f
+
+time:0.183 s  length:9  search nodes:427851
+
+init 71:
+g=0 h=6 f=g+h=6
+4 0 6 3
+5 d 9 b
+8 e f 7
+c a 1 2
+
+time:0.122 s  length:9  search nodes:302091
+
+init 72:
+g=0 h=6 f=g+h=6
+0 2 3 7
+1 4 b 9
+c 8 f a
+d 5 6 e
+
+time:0.117 s  length:9  search nodes:251036
+
+init 73:
+g=0 h=7 f=g+h=7
+8 4 0 2
+6 e 7 3
+a 1 b f
+c 9 5 d
+
+time:0.019 s  length:9  search nodes:48050
+
+init 74:
+g=0 h=5 f=g+h=5
+1 5 3 7
+4 2 6 b
+0 c 9 e
+d a 8 f
+
+time:0.003 s  length:7  search nodes:3562
+
+init 75:
+g=0 h=6 f=g+h=6
+0 a 1 3
+4 d b 2
+8 9 7 e
+6 c f 5
+
+time:0.007 s  length:9  search nodes:16317
+
+init 76:
+g=0 h=6 f=g+h=6
+1 6 2 3
+0 b e a
+4 d 8 9
+5 c 7 f
+
+time:3.035 s  length:11  search nodes:7787254
+
+init 77:
+g=0 h=5 f=g+h=5
+4 0 6 3
+1 2 a 7
+c d 5 b
+9 8 f e
+
+time:0.759 s  length:9  search nodes:1742455
+
+init 78:
+g=0 h=5 f=g+h=5
+1 4 6 2
+9 5 7 0
+8 a e 3
+c d f b
+
+time:0.213 s  length:9  search nodes:513167
+
+init 79:
+g=0 h=4 f=g+h=4
+1 a 3 7
+0 4 6 2
+8 9 b 5
+c d e f
+
+time:0.025 s  length:7  search nodes:50564
+
+init 80:
+g=0 h=7 f=g+h=7
+0 1 3 8
+a e 6 2
+5 4 f 7
+d c b 9
+
+time:0.055 s  length:10  search nodes:138043
+
+init 81:
+g=0 h=6 f=g+h=6
+0 3 7 5
+b 8 2 6
+1 4 9 f
+c d a e
+
+time:0.006 s  length:8  search nodes:15109
+
+init 82:
+g=0 h=6 f=g+h=6
+1 5 b 2
+4 6 7 3
+d 8 a 9
+e 0 f c
+
+time:27.118 s  length:12  search nodes:68651690
+
+init 83:
+g=0 h=6 f=g+h=6
+1 9 3 7
+5 d 0 6
+8 2 a f
+4 b c e
+
+time:0.378 s  length:10  search nodes:979424
+
+init 84:
+g=0 h=5 f=g+h=5
+5 0 3 7
+1 d 6 a
+4 9 2 e
+c 8 f b
+
+time:0.013 s  length:8  search nodes:34007
+
+init 85:
+g=0 h=7 f=g+h=7
+5 9 0 2
+6 b 1 3
+d a 7 e
+4 c 8 f
+
+time:0.057 s  length:10  search nodes:135111
+
+init 86:
+g=0 h=6 f=g+h=6
+4 0 3 7
+8 6 1 2
+f a e 9
+c d 5 b
+
+time:0.415 s  length:10  search nodes:1061541
+
+init 87:
+g=0 h=7 f=g+h=7
+0 7 4 6
+8 1 5 2
+9 a d f
+c 3 b e
+
+time:0.003 s  length:8  search nodes:4137
+
+init 88:
+g=0 h=4 f=g+h=4
+0 1 2 3
+5 4 6 e
+c a d b
+9 8 7 f
+
+time:0.022 s  length:8  search nodes:63667
+
+init 89:
+g=0 h=6 f=g+h=6
+3 1 4 5
+b 0 7 2
+8 9 a f
+c d 6 e
+
+time:0.215 s  length:10  search nodes:523422
+
+init 90:
+g=0 h=6 f=g+h=6
+1 4 3 6
+0 8 a 2
+5 c d 7
+e 9 b f
+
+time:0.745 s  length:10  search nodes:1917696
+
+init 91:
+g=0 h=8 f=g+h=8
+5 2 6 a
+b 8 0 e
+4 3 1 7
+c d 9 f
+
+time:6.264 s  length:12  search nodes:15631336
+
+init 92:
+g=0 h=6 f=g+h=6
+9 0 3 7
+d 5 2 6
+e 4 8 b
+c a 1 f
+
+time:0.437 s  length:10  search nodes:1108430
+
+init 93:
+g=0 h=7 f=g+h=7
+1 a 6 2
+8 4 e 3
+5 d b 0
+9 c f 7
+
+time:0.1 s  length:10  search nodes:269697
+
+init 94:
+g=0 h=7 f=g+h=7
+9 4 1 3
+a 0 b 5
+2 6 f 7
+8 d c e
+
+time:0.599 s  length:10  search nodes:1575542
+
+init 95:
+g=0 h=7 f=g+h=7
+8 0 1 5
+9 4 7 3
+2 6 f e
+c d b a
+
+time:0.003 s  length:8  search nodes:4121
+
+init 96:
+g=0 h=7 f=g+h=7
+4 9 7 0
+3 d 1 5
+8 b a 2
+c e 6 f
+
+time:0.176 s  length:10  search nodes:444120
+
+init 97:
+g=0 h=7 f=g+h=7
+0 5 d 3
+1 6 9 7
+b e 4 a
+8 2 c f
+
+time:13.74 s  length:12  search nodes:34617148
+
+init 98:
+g=0 h=7 f=g+h=7
+0 2 6 7
+5 d 9 1
+8 f 4 3
+b a c e
+
+time:10.987 s  length:12  search nodes:28455066
+
+init 99:
+g=0 h=7 f=g+h=7
+2 4 3 b
+1 0 d e
+9 a 6 5
+8 c f 7
+
+time:26.659 s  length:12  search nodes:66630406
+

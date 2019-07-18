@@ -20,16 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GenProblem.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="HeuristicAlgorithms.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Rubik.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="RotatingMaze.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="HeuristicTables.h">
@@ -39,6 +33,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="HashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RM_3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NPuzzle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RotatingMaze.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

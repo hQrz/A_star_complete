@@ -1,0 +1,700 @@
+0th
+2 4 9 6
+0 1 3 b
+d 5 7 a
+8 c e f
+l cc|ld c|d cc|u cc|d c|l cc|ru c|lu cc|r cc|ld c|
+
+1th
+8 3 b a
+4 0 1 2
+c 6 5 7
+d f e 9
+c cc|ru c|l c|r cc|rd c|lu c|ld c|ru c|u cc|d c|
+
+2th
+2 5 0 3
+4 1 6 7
+8 9 f e
+c d b a
+u cc|rd cc|lu c|rd cc|u c|d c|lu cc|lu c|d cc|lu cc|
+
+3th
+0 2 7 5
+1 3 4 d
+6 a e b
+9 8 c f
+ld cc|u cc|lu cc|ru cc|c c|u cc|d cc|ru cc|lu c|ld cc|
+
+4th
+5 1 3 6
+9 e 0 2
+c 4 f 7
+8 a d b
+d c|d cc|l cc|rd c|lu c|r c|u c|ru cc|d cc|ld c|
+
+5th
+4 0 2 3
+5 e 7 6
+d c a 8
+9 1 f b
+rd c|r c|rd cc|rd c|ld c|rd cc|lu c|c cc|rd c|ld c|
+
+6th
+0 2 a 3
+4 7 6 f
+d 8 1 5
+9 e b c
+ld c|ld c|c cc|u cc|d c|rd cc|d cc|r cc|c cc|d c|
+
+7th
+4 8 3 7
+1 6 2 5
+0 9 b f
+c e d a
+u cc|lu c|lu c|l cc|l cc|d c|lu cc|ru cc|c cc|rd cc|
+
+8th
+9 e 5 1
+0 4 3 6
+8 f d 2
+c 7 a b
+c c|rd c|r c|u c|ru cc|lu cc|r c|d c|d c|ru cc|
+
+9th
+5 7 9 2
+0 4 6 1
+8 a 3 b
+c d e f
+ru c|lu c|ru c|c c|l cc|ru cc|l c|u cc|lu c|u cc|
+
+10th
+4 a 5 3
+1 2 0 7
+c 9 6 b
+8 d e f
+c cc|lu c|l cc|d cc|u c|u c|ld c|d c|rd c|rd cc|
+
+11th
+4 6 1 7
+5 d 0 2
+9 c b a
+8 e 3 f
+lu c|u c|ld cc|d c|ru cc|r c|d cc|u c|r cc|d c|
+
+12th
+0 3 b 5
+4 e 2 7
+8 1 a 9
+c 6 d f
+r cc|c c|r c|ru cc|u cc|d cc|ru cc|r c|c cc|ru c|
+
+13th
+1 a 8 3
+0 2 4 7
+9 6 e d
+5 f c b
+c cc|l c|lu cc|u cc|d cc|ld cc|d cc|u cc|rd c|d c|
+
+14th
+0 1 6 2
+5 d c 3
+4 7 f a
+8 e 9 b
+rd c|d c|ru c|ld cc|l cc|d c|c c|c c|rd c|rd cc|
+
+15th
+9 a 0 3
+8 b 2 6
+d 1 4 5
+c e f 7
+d cc|d c|r c|l c|d c|l c|rd c|lu c|c cc|u c|
+
+16th
+1 4 7 6
+0 8 f e
+9 5 2 b
+c d 3 a
+rd c|rd c|ru cc|rd c|ru cc|r cc|rd cc|l c|lu cc|r cc|
+
+17th
+1 9 5 3
+0 c 2 b
+4 d 6 a
+e 8 7 f
+lu cc|c cc|ld cc|r c|ld cc|c cc|r c|d c|ld c|u c|
+
+18th
+5 9 7 6
+8 2 d a
+3 0 b 1
+4 c e f
+l cc|ru cc|u c|lu c|ld cc|u c|ru cc|c cc|l c|r c|
+
+19th
+1 5 3 7
+9 d 8 b
+0 c 2 e
+4 a f 6
+lu cc|l c|l c|ru cc|r cc|ld cc|c c|rd cc|rd cc|d c|
+
+20th
+1 5 6 2
+0 7 e 3
+4 d 9 a
+8 c f b
+ru c|ld c|ld c|ld cc|ru cc|rd c|ld cc|ru c|lu cc|c cc|ld cc|
+
+21th
+4 6 a 7
+1 0 2 b
+c 8 e 9
+d 3 5 f
+ru cc|c cc|r cc|u cc|ru c|lu c|ru cc|ld c|c cc|u cc|d cc|
+
+22th
+8 9 6 3
+2 0 5 a
+c 1 7 f
+d 4 b e
+l c|u cc|c cc|rd c|rd cc|l c|lu c|r c|rd cc|ld c|lu c|
+
+23th
+6 9 3 7
+0 1 e 2
+4 8 a b
+c d 5 f
+lu cc|lu c|c cc|c cc|l cc|d cc|u c|lu cc|ru cc|c cc|d c|
+
+24th
+1 5 2 3
+c 4 6 7
+8 9 0 e
+d b f a
+rd c|lu cc|l cc|ld c|rd c|rd cc|ld c|rd c|ld cc|d c|l c|
+
+25th
+4 9 3 7
+c 0 5 a
+d 6 2 1
+e 8 f b
+ld cc|rd c|u c|ru cc|c c|l c|lu c|r cc|ld cc|c c|lu c|
+
+26th
+0 8 1 7
+a 2 3 6
+5 d f e
+c 4 9 b
+d cc|l cc|ru c|l cc|ru c|rd c|ru c|lu cc|lu c|d cc|u c|
+
+27th
+0 8 5 1
+b 2 3 6
+9 4 e a
+c d f 7
+rd cc|ru c|ru c|u c|c c|rd c|ru c|rd c|l cc|l cc|u c|
+
+28th
+0 6 2 3
+4 a 5 b
+1 7 9 d
+8 c e f
+r cc|c cc|lu c|rd cc|c cc|rd c|lu cc|ld cc|rd cc|c cc|rd c|
+
+29th
+0 1 3 6
+8 4 2 a
+9 c 5 e
+d 7 f b
+c c|l c|rd c|ld c|r cc|d c|l cc|c cc|l c|d cc|ru cc|
+
+30th
+0 1 2 3
+8 4 7 f
+c 9 6 b
+e d 5 a
+l c|lu c|d c|lu c|rd cc|lu c|l cc|l c|ld c|r cc|lu c|
+
+31th
+0 1 6 2
+7 9 3 b
+5 8 4 f
+c d a e
+ru c|l cc|u c|r cc|l cc|r c|ru c|rd cc|c cc|ru cc|u cc|
+
+32th
+5 2 7 4
+9 1 b 3
+a e 6 d
+8 c 0 f
+lu c|u cc|c cc|d cc|c c|d cc|ld cc|lu c|u c|r cc|ru c|
+
+33th
+5 6 d 2
+0 b 3 1
+9 4 7 a
+8 c e f
+ld cc|u c|ru c|c c|lu cc|c cc|r cc|ru c|u c|lu c|lu cc|
+
+34th
+0 2 3 5
+4 b 7 9
+1 c d 6
+8 e a f
+r c|u cc|ru c|ru cc|r c|c cc|c cc|ru cc|c c|ld cc|d c|
+
+35th
+5 2 9 3
+1 4 6 b
+7 d 0 a
+8 c e f
+lu c|lu c|r cc|c cc|c cc|ld c|u cc|rd c|rd cc|ld cc|ld cc|
+
+36th
+4 3 1 2
+5 0 6 e
+8 a 9 b
+c d f 7
+c cc|rd cc|rd cc|r cc|c c|lu c|ru cc|u cc|ru c|rd c|rd c|
+
+37th
+0 4 1 2
+8 b 7 3
+c 9 f 5
+6 e a d
+l c|r cc|d c|ru c|d c|u c|ld c|ld c|ld cc|rd c|rd c|
+
+38th
+0 1 6 2
+9 4 5 3
+b d a f
+8 7 c e
+ld cc|r cc|r cc|c cc|c cc|l c|r cc|r cc|rd cc|d cc|ru c|
+
+39th
+0 8 5 3
+9 4 1 6
+c d b 7
+e 2 a f
+d c|u c|c c|l cc|l cc|u c|c c|r cc|ld c|r cc|r cc|
+
+40th
+4 7 6 2
+5 0 3 1
+8 d 9 e
+c b f a
+rd cc|ld cc|rd cc|ru c|ru c|ld c|rd c|lu c|rd cc|d c|u cc|ru cc|
+
+41th
+2 d 3 7
+0 4 1 5
+c 9 6 e
+f a 8 b
+lu c|d cc|lu cc|rd c|d c|ld c|d cc|u cc|ru cc|d cc|c c|lu cc|
+
+42th
+d c 3 1
+0 5 2 7
+4 b a 6
+8 9 e f
+ru cc|ld cc|d c|l cc|r cc|r c|d cc|r c|c c|u c|lu cc|ru c|
+
+43th
+0 1 e 3
+c b a 7
+5 4 6 f
+d 9 2 8
+ru cc|r cc|c cc|c c|rd c|ld c|c cc|rd c|l c|rd c|ru c|c cc|
+
+44th
+4 2 6 3
+9 0 7 b
+5 1 c d
+8 a e f
+ld cc|r cc|c cc|r cc|lu c|r c|rd cc|u cc|l c|c c|d cc|rd c|
+
+45th
+5 4 1 3
+2 6 0 7
+d 9 e a
+8 c b f
+rd c|lu c|rd cc|rd cc|ld c|d cc|ld c|rd c|u cc|u cc|d cc|lu c|
+
+46th
+2 5 6 3
+0 8 9 7
+4 1 e d
+c f a b
+ld cc|d c|l c|ld cc|rd c|d c|l c|u cc|ru c|l c|lu cc|ru cc|
+
+47th
+c 5 4 6
+2 f 7 3
+1 b 0 e
+d 8 9 a
+rd c|lu c|ld c|lu c|rd c|u cc|d cc|c c|ru c|l c|lu c|l cc|
+
+48th
+4 5 a 3
+c 1 e b
+7 0 2 6
+d 9 8 f
+c c|lu c|l cc|ld c|r cc|d cc|c c|ru cc|c c|ru c|u cc|l c|
+
+49th
+4 0 6 3
+2 9 a 1
+d e c f
+8 b 7 5
+c cc|d c|u cc|ld cc|d c|c c|r c|u cc|lu c|rd cc|d c|c c|
+
+50th
+4 0 1 3
+8 a 6 7
+9 5 f e
+c d 2 b
+lu c|rd c|l c|d cc|r c|ru cc|c c|d c|c cc|c cc|ru c|r cc|
+
+51th
+4 2 6 3
+0 f d 7
+8 1 5 9
+e a c b
+d c|lu c|l c|u cc|ld c|rd c|l cc|lu cc|lu c|d c|d c|c c|
+
+52th
+8 2 d 3
+5 4 1 7
+0 b 6 f
+c e 9 a
+d c|lu cc|rd cc|l cc|c c|lu c|r cc|lu c|r c|u cc|c cc|c c|
+
+53th
+0 e 9 3
+4 5 a 6
+2 b 1 7
+c d 8 f
+l cc|ld c|c cc|c c|d cc|r c|ld cc|u c|u c|l c|l c|c c|
+
+54th
+1 0 2 3
+9 a b 6
+c 4 7 5
+d 8 e f
+r c|ru c|u cc|ru cc|l cc|ru c|lu c|rd c|rd cc|ru cc|r c|ld c|
+
+55th
+4 0 6 2
+8 5 1 b
+3 7 a e
+c 9 d f
+lu c|u c|d cc|ru cc|u c|ru cc|r cc|u c|c cc|r cc|l c|r c|
+
+56th
+4 0 3 7
+9 1 5 8
+d 6 e b
+c 2 a f
+d c|ld c|u c|c c|d c|ld cc|c cc|u c|d c|lu c|c cc|ru cc|
+
+57th
+4 9 1 3
+6 0 5 7
+2 b d f
+8 e c a
+d c|u c|u c|c cc|ld cc|ru cc|lu cc|ru c|u c|lu cc|rd cc|d cc|
+
+58th
+8 0 6 2
+7 4 a 5
+1 c e 3
+d 9 f b
+ld c|r cc|c c|l cc|c c|lu c|ru c|l cc|r cc|l cc|r cc|rd c|
+
+59th
+4 0 2 3
+1 6 a 5
+d c e b
+8 9 f 7
+c cc|lu c|l cc|ld c|c c|ld cc|lu cc|ld c|lu c|r c|rd c|ld c|
+
+60th
+1 a 2 3
+0 6 e 8
+9 d 7 b
+c 4 5 f
+l c|l c|d cc|lu cc|ld c|c cc|d c|lu c|ru c|c c|ld cc|lu cc|ru cc|
+
+61th
+9 5 f a
+c 0 6 2
+1 7 3 e
+d 8 4 b
+r c|l cc|rd cc|ld c|ru c|r c|c cc|rd cc|ru c|lu c|l cc|l cc|lu c|
+
+62th
+1 5 3 b
+4 d 2 7
+0 c 9 f
+8 6 a e
+lu c|r cc|ru cc|lu c|r c|r cc|rd c|rd c|ld cc|lu c|rd c|l cc|d c|
+
+63th
+1 5 7 3
+d 4 0 6
+a 8 c b
+9 e 2 f
+ld cc|lu c|ru c|u c|l cc|ru cc|l c|lu cc|ld cc|u c|c c|l c|d c|
+
+64th
+0 9 5 7
+b 4 3 a
+1 6 e 2
+8 d c f
+u c|ld cc|ru cc|r cc|c c|l cc|l cc|r cc|u c|l cc|d cc|ru cc|ru c|
+
+65th
+1 2 7 3
+4 5 6 d
+8 9 b f
+c 0 a e
+lu cc|rd cc|l c|d c|l c|d cc|l cc|r cc|l cc|u cc|l cc|r c|l c|
+
+66th
+0 2 6 3
+8 1 4 b
+5 e 7 d
+c 9 f a
+r cc|c cc|l c|d cc|ru cc|d cc|rd c|ru c|u cc|r cc|ld cc|r c|ld c|
+
+67th
+5 1 e 3
+0 4 a 6
+f 7 2 9
+8 c b d
+lu cc|rd c|d cc|d cc|ld cc|r cc|rd c|l cc|lu cc|r cc|l c|u c|c c|
+
+68th
+1 f 2 3
+4 9 0 7
+8 6 e a
+c 5 d b
+l cc|lu cc|rd c|c c|c cc|l c|u c|d cc|c cc|c cc|c c|u c|u c|
+
+69th
+0 9 3 7
+4 c a 1
+8 d 6 2
+5 e b f
+rd cc|u c|ld c|rd c|lu c|l cc|ru cc|l cc|ld cc|l cc|r c|lu cc|d c|
+
+70th
+1 2 7 6
+0 b 5 3
+c 4 e a
+d 8 9 f
+ru cc|d c|lu c|lu cc|ld cc|d c|lu cc|rd cc|ld cc|c cc|u c|ru cc|rd c|
+
+71th
+4 0 6 3
+5 d 9 b
+8 e f 7
+c a 1 2
+d c|lu c|ru cc|c c|c c|c cc|d c|r cc|ru c|ld cc|ld c|rd cc|r c|
+
+72th
+0 2 3 7
+1 4 b 9
+c 8 f a
+d 5 6 e
+c cc|rd cc|d cc|u cc|ru cc|lu cc|r cc|lu c|r cc|l cc|d c|ld c|c c|
+
+73th
+8 4 0 2
+6 e 7 3
+a 1 b f
+c 9 5 d
+d c|ru c|d cc|d cc|l c|u cc|ld cc|lu c|l cc|c cc|ld c|rd cc|u c|
+
+74th
+1 5 3 7
+4 2 6 b
+0 c 9 e
+d a 8 f
+lu c|ld cc|r c|ld c|r cc|ld c|ru cc|lu cc|d cc|lu cc|r cc|d cc|l cc|
+
+75th
+0 a 1 3
+4 d b 2
+8 9 7 e
+6 c f 5
+c cc|lu c|lu cc|c cc|rd cc|u c|r c|l c|ru cc|ld cc|rd cc|ru c|l cc|
+
+76th
+1 6 2 3
+0 b e a
+4 d 8 9
+5 c 7 f
+lu c|c cc|rd cc|r c|c cc|c c|l cc|lu c|rd cc|lu c|rd cc|c cc|ld cc|
+
+77th
+4 0 6 3
+1 2 a 7
+c d 5 b
+9 8 f e
+ld cc|r cc|c cc|rd cc|u cc|r c|ru cc|d c|d c|lu c|d cc|ld cc|ru c|
+
+78th
+1 4 6 2
+9 5 7 0
+8 a e 3
+c d f b
+d cc|l c|lu cc|l c|ru c|c c|rd c|rd cc|d c|rd c|l cc|l cc|r c|
+
+79th
+1 a 3 7
+0 4 6 2
+8 9 b 5
+c d e f
+lu cc|rd c|rd cc|l cc|ld c|ld cc|c cc|u cc|u cc|ru cc|c c|r c|l c|
+
+80th
+0 1 3 8
+a e 6 2
+5 4 f 7
+d c b 9
+ld c|l cc|u cc|u c|d cc|c c|rd cc|rd cc|rd cc|ru c|r cc|rd c|ru c|l cc|
+
+81th
+0 3 7 5
+b 8 2 6
+1 4 9 f
+c d a e
+rd cc|ru cc|u cc|c cc|r cc|c c|l c|c cc|c c|r c|ru cc|l cc|l cc|l cc|
+
+82th
+1 5 b 2
+4 6 7 3
+d 8 a 9
+e 0 f c
+ld cc|rd c|lu cc|d cc|rd c|rd c|l cc|c cc|ru cc|ru c|ld cc|ru c|ld cc|rd c|
+
+83th
+1 9 3 7
+5 d 0 6
+8 2 a f
+4 b c e
+l cc|lu cc|ru cc|lu cc|rd cc|c c|u cc|u c|lu c|u cc|u c|ld cc|l cc|d cc|
+
+84th
+5 0 3 7
+1 d 6 a
+4 9 2 e
+c 8 f b
+l cc|ld c|lu c|ld c|ru cc|rd c|l c|c cc|c c|ld cc|r cc|l cc|l c|l c|
+
+85th
+5 9 0 2
+6 b 1 3
+d a 7 e
+4 c 8 f
+r c|l cc|c cc|d c|rd cc|rd c|ru c|r c|ld cc|c cc|r cc|u c|lu c|u c|
+
+86th
+4 0 3 7
+8 6 1 2
+f a e 9
+c d 5 b
+u c|d c|d c|ru cc|rd cc|l c|r c|l cc|lu c|c c|l c|d c|r cc|rd cc|
+
+87th
+0 7 4 6
+8 1 5 2
+9 a d f
+c 3 b e
+rd cc|l c|ru c|ld c|r c|ld cc|r cc|ru c|c c|d c|l cc|l c|u cc|d c|
+
+88th
+0 1 2 3
+5 4 6 e
+c a d b
+9 8 7 f
+d cc|ld c|u cc|lu cc|c cc|lu c|rd cc|d cc|d c|d c|r c|u c|rd c|rd c|
+
+89th
+3 1 4 5
+b 0 7 2
+8 9 a f
+c d 6 e
+ru cc|u cc|ru c|lu c|r cc|lu c|ru c|u c|lu c|rd c|u cc|rd cc|u c|rd cc|
+
+90th
+1 4 3 6
+0 8 a 2
+5 c d 7
+e 9 b f
+lu c|rd c|lu cc|l c|ru c|d cc|ld cc|r cc|ld cc|lu cc|l cc|ru c|l c|rd c|
+
+91th
+5 2 6 a
+b 8 0 e
+4 3 1 7
+c d 9 f
+r c|ru cc|d cc|l cc|lu cc|lu cc|c cc|ru cc|d c|rd c|lu cc|c cc|rd cc|c cc|
+
+92th
+9 0 3 7
+d 5 2 6
+e 4 8 b
+c a 1 f
+l c|d c|ru cc|c c|l c|d cc|lu c|d c|l c|c cc|lu cc|d c|lu c|l c|
+
+93th
+1 a 6 2
+8 4 e 3
+5 d b 0
+9 c f 7
+r c|ld c|lu c|lu c|rd c|lu cc|u c|ru c|ld cc|ru c|r c|lu cc|l c|ld cc|
+
+94th
+9 4 1 3
+a 0 b 5
+2 6 f 7
+8 d c e
+ru cc|c cc|r cc|c cc|r c|rd cc|ru c|ld cc|d cc|c cc|u c|lu c|lu c|r c|
+
+95th
+8 0 1 5
+9 4 7 3
+2 6 f e
+c d b a
+c c|c cc|u cc|d c|d cc|rd c|u cc|l c|lu c|ru c|r c|r cc|l c|rd c|
+
+96th
+4 9 7 0
+3 d 1 5
+8 b a 2
+c e 6 f
+c c|ru c|d c|ld cc|ld c|ru c|u c|lu c|rd cc|rd c|u c|r c|c c|ru c|
+
+97th
+0 5 d 3
+1 6 9 7
+b e 4 a
+8 2 c f
+u c|ld c|u c|ld cc|r c|c c|lu cc|ld cc|r cc|d c|c cc|lu c|d c|u cc|
+
+98th
+0 2 6 7
+5 d 9 1
+8 f 4 3
+b a c e
+l cc|ld c|u c|rd cc|u c|ld c|d cc|d cc|rd cc|ru cc|ld c|u c|c c|rd c|
+
+99th
+2 4 3 b
+1 0 d e
+9 a 6 5
+8 c f 7
+u cc|r c|d c|rd c|ld cc|c cc|r c|ru cc|l c|c cc|c c|lu cc|c c|l c|
+

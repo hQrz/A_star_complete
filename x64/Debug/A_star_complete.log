@@ -1,6 +1,29 @@
 ﻿  main.cpp
-d:\mycodes\vs2015\a_star_complete\a_star_complete\genproblem.h(103): warning C4311: “类型转换”: 从“unsigned int *”到“unsigned int”的指针截断
-d:\mycodes\vs2015\a_star_complete\a_star_complete\genproblem.h(103): warning C4302: “类型转换”: 从“unsigned int *”到“unsigned int”截断
-d:\mycodes\vs2015\a_star_complete\a_star_complete\heuristictables.h(63): warning C4244: “=”: 从“short”转换到“unsigned char”，可能丢失数据
+d:\mycodes\vs2015\a_star_complete\a_star_complete\heuristictables.h(142): warning C4244: “=”: 从“short”转换到“unsigned char”，可能丢失数据
+d:\mycodes\vs2015\a_star_complete\a_star_complete\rotatingmaze.h(482): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mycodes\vs2015\a_star_complete\a_star_complete\rotatingmaze.h(484): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mycodes\vs2015\a_star_complete\a_star_complete\npuzzle.h(239): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+d:\mycodes\vs2015\a_star_complete\a_star_complete\npuzzle.h(275): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+d:\mycodes\vs2015\a_star_complete\a_star_complete\npuzzle.h(347): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(200): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(238): note: 参见对正在编译的函数 模板 实例化“void LinearExperiment<BestPuzzle>(T *,ExpInfo *,std::function<std::queue<BestPuzzle,std::deque<_Ty,std::allocator<_Ty>>> (BestPuzzle &,BestPuzzle &,unsigned __int64 &)>)”的引用
+          with
+          [
+              T=BestPuzzle,
+              _Ty=BestPuzzle
+          ]
+d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(168): warning C4267: “=”: 从“size_t”转换到“short”，可能丢失数据
+  d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(185): note: 参见对正在编译的函数 模板 实例化“void Search<T>(int,T *,ExpInfo *,std::function<std::queue<BestPuzzle,std::deque<_Ty,std::allocator<_Ty>>> (BestPuzzle &,BestPuzzle &,unsigned __int64 &)>)”的引用
+          with
+          [
+              T=BestPuzzle,
+              _Ty=BestPuzzle
+          ]
+  d:\mycodes\vs2015\a_star_complete\a_star_complete\main.cpp(217): note: 参见对正在编译的函数 模板 实例化“void Experiment<BestPuzzle>(T *,ExpInfo *,std::function<std::queue<BestPuzzle,std::deque<_Ty,std::allocator<_Ty>>> (BestPuzzle &,BestPuzzle &,unsigned __int64 &)>)”的引用
+          with
+          [
+              T=BestPuzzle,
+              _Ty=BestPuzzle
+          ]
   A_star_complete.vcxproj -> D:\MyCodes\VS2015\A_star_complete\x64\Debug\A_star_complete.exe
   A_star_complete.vcxproj -> D:\MyCodes\VS2015\A_star_complete\x64\Debug\A_star_complete.pdb (Partial PDB)
